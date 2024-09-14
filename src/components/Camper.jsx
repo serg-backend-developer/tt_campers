@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import Button from './Button';
-import CamperHeader from './CamperHeader';
+import CamperPageHeader from './CamperPageHeader';
 import EquipmentList from './EquipmentList';
 import css from './Camper.module.css';
 import { getFilteredVehicleEquipment } from './utils';
@@ -16,7 +16,7 @@ const Camper = ({ camper }) => {
       <img src={gallery[0].thumb} alt={name} className={css.image} />
 
       <div className={css.info}>
-        <CamperHeader camper={camper} />
+        <CamperPageHeader camper={camper} />
 
         <p className={css.description}>{description}</p>
 
