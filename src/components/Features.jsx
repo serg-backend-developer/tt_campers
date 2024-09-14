@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { selectCamperById } from './redux/campers/campersSelectors';
 import EquipmentList from './VehicleEquipmentList';
-import VehicleDetails from './VehicleDetails';
+import VehicleItemDescription from './VehicleItemDescription';
 import { getFilteredVehicleEquipment } from './utils';
 import css from './Features.module.css';
 
@@ -15,7 +15,7 @@ const Features = () => {
     <div className={css.content}>
       <EquipmentList equipment={vehicleEquipment} />
 
-      <VehicleDetails {...camper} />
+      <VehicleItemDescription {...camper} />
     </div>
   );
 };
