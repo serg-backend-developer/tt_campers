@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import { getAllCampers, getCamperById } from "./campersOps";
-import { changeFilter } from "../filters/filterSlice";
+import { changeFilter } from "../filters/filtersSlice";
 
 const pending = (state) => {
 	state.loading = true;

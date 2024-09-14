@@ -5,9 +5,9 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import { campersReducer } from "./redux/campers/campersSlice";
-import { favoritesReducer } from "./redux/favorites/favoritesSlice";
-import { filtersReducer } from "./redux/filters/filtersSlice";
+import { campersReducer } from "../redux/campers/campersSlice";
+import { favoritesReducer } from "../redux/favorites/favoritesSlice";
+import { filtersReducer } from "../redux/filters/filtersSlice";
 
 const persistConfig = {
 	key: "favoriteCampers",

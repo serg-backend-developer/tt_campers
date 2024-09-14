@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
-@import "@styles/vars.css";
+@import "./vars.css";
 
 html {
 	box-sizing: border-box;
