@@ -2,21 +2,21 @@ import { lazy, Suspense } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
-import Header from './components/Header/Header';
-import Loader from './components/Loader/Loader';
+import MainHeader from './/MainHeader';
+import Loader from './Loader';
 
-const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-const CatalogPage = lazy(() => import('./pages/CatalogPage/CatalogPage'));
-const CamperPage = lazy(() => import('./pages/CamperPage/CamperPage'));
-const FavoritesPage = lazy(() => import('./pages/FavoritesPage/FavoritesPage'));
+const HomePage = lazy(() => import('./pages/HomePage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage'));
+const CamperPage = lazy(() => import('./pages/CamperPage'));
+const FavoritesPage = lazy(() => import('./pages/FavoritesPage'));
 
-const Features = lazy(() => import('./components/Features/Features'));
-const Reviews = lazy(() => import('./components/Reviews/Reviews'));
+const Features = lazy(() => import('./components/Features'));
+const Reviews = lazy(() => import('./components/Reviews'));
 
 const App = () => {
   return (
     <>
-      <Header />
+      <MainHeader />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
