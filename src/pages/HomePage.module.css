@@ -1,0 +1,62 @@
+.main {
+	display: flex;
+	align-items: center;
+	color: var(--inputs);
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url(@assets/home/home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (min-resolution: 192dpi) or (min-resolution: 2dppx) {
+	.main {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0.2),
+				rgba(0, 0, 0, 0.2)
+			),
+			url(@assets/home/home@2x.jpg);
+	}
+}
+
+@media (min-resolution: 288dpi) or (min-resolution: 3dppx) {
+	.main {
+		background-image: linear-gradient(
+				rgba(0, 0, 0, 0.2),
+				rgba(0, 0, 0, 0.2)
+			),
+			url(@assets/home/home@3x.jpg);
+	}
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		font-size: 48px;
+		line-height: 0.66667;
+	}
+}
+
+.text {
+	font-weight: 600;
+	font-size: var(--font-small);
+	line-height: 1.33333;
+	margin-top: 16px;
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.text {
+		font-size: var(--font-large);
+	}
+}
+
+.link {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+}
