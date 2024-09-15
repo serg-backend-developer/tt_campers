@@ -1,4 +1,4 @@
-.main {
+.rev {
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
@@ -6,14 +6,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-	.main {
+	.rev {
 		gap: 24px;
 		padding: 12px 0;
 	}
 }
 
 @media screen and (min-width: 1440px) {
-	.main {
+	.rev {
 		gap: 44px;
 	}
 }

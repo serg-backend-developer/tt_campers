@@ -20,7 +20,7 @@ const Reviews = () => {
   };
 
   return (
-    <ul className={css.main}>
+    <ul className={css.rev}>
       {reviews.map(({ reviewer_name, reviewer_rating, comment }) => (
         <li className={css.item} key={reviewer_name}>
           <div className={css.header}>

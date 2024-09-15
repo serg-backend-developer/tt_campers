@@ -28,20 +28,20 @@
 	height: 16px;
 }
 
-.iconHeart {
+.heart {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
 	transition: fill var(--animation-cubicBezier);
 }
 
-.iconHeart:hover,
-.iconHeart:focus,
+.heart:hover,
+.heart:focus,
 .active {
 	fill: var(--button);
 }
 
-.iconMap {
+.map {
 	width: 16px;
 	height: 16px;
 	position: absolute;
@@ -50,7 +50,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.iconMap {
+	.map {
 		width: 20px;
 		height: 20px;
 		top: 18px;

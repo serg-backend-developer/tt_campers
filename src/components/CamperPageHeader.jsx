@@ -35,7 +35,7 @@ const CamperPageHeader = ({ camper }) => {
             <span className={css.price}>€{price.toFixed(2)}</span>
             <Icon
               name="icon-heart"
-              className="iconHeart"
+              className="heart"
               onClick={handleClick}
               active={isFavorite}
             />

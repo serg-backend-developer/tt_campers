@@ -47,7 +47,7 @@ const Filters = () => {
                 Location
               </label>
               <div className={css.inputWrapper}>
-                <Icon name="icon-map" className="iconMap" />
+                <Icon name="icon-map" className="map" />
                 <Field
                   type="text"
                   id="location"
