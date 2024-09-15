@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 import Icon from './Icon';
-import { selectCamperById } from './redux/campers/campersSelectors';
+import { selectCamperById } from '../redux/campers/campersSelectors';
 import css from './Reviews.module.css';
 
 const Reviews = () => {
