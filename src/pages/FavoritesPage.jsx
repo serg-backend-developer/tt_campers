@@ -11,7 +11,7 @@ const FavoritesPage = () => {
   return (
     <>
       <main>
-        <section className={css.section}>
+        <section className={css.main}>
           <Container className="favorites">
             {favorites.length > 0 ? (<CamperList items={favorites} />)
             : (<p className={css.abs}>

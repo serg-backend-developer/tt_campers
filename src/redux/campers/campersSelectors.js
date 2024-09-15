@@ -1,5 +1,6 @@
 import { createSelector } from "@reduxjs/toolkit";
 import {selectEquipment, selectLocation, selectVehicleType} from "../filters/filtersSelectors";
+
 export const selectAllCampers = (state) => state.campers.items;
 export const selectCamperById = (state) => state.campers.camper;
 export const selectIsLoading = (state) => state.campers.loading;

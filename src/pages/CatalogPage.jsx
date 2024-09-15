@@ -25,7 +25,7 @@ const CatalogPage = () => {
   return (
     <>
       <main>
-        <section className={css.section}>
+        <section className={css.main}>
           <Container className="catalog">
             <Filters />
             {isLoading && <Loader />}

@@ -44,16 +44,16 @@ const CamperPage = () => {
         <section className={css.section}>
           <Container>
             {camper && (
-              <div className={css.wrapper}>
+              <div className={css.main}>
                 <CamperPageHeader camper={camper} />
-                <ul className={css.gallery}>
+                <ul className={css.list}>
                   {camper.gallery.map(({ thumb, original }) => (
-                    <li key={thumb} className={css.galleryItem}>
+                    <li key={thumb} className={css.listItem}>
                       <img
                         src={thumb}
                         data-original={original}
                         alt="Camper"
-                        className={css.galleryImage}
+                        className={css.listImage}
                         onClick={handleClick}
                       />
                     </li>
@@ -61,7 +61,7 @@ const CamperPage = () => {
                 </ul>
                 <p className={css.description}>{camper.description}</p>
                 <Navigation />
-                <div className={css.content}>
+                <div className={css.info}>
                   <Suspense fallback={<Loader />}>
                     <Outlet />
                   </Suspense>
