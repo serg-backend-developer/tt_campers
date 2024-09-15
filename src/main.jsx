@@ -1,20 +1,20 @@
 import 'modern-normalize';
 
+
 import { StrictMode } from 'react';
-import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { PersistGate } from 'redux-persist/integration/react';
-
-import { persister, store } from './redux/store';
+import { Provider } from 'react-redux';
 import App from './components/App';
+import { persistor, store } from './redux/store';
 import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <PersistGate loading={null} persister={persister}>
+      <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <HelmetProvider>
             <App />

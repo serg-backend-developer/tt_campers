@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { Link, NavLink } from 'react-router-dom';
 
 import Container from './Container';
-import logo from '../assets/icon.svg';
+import logo from '../assets/company_label.svg';
 import css from './MainHeader.module.css';
 
 const MainHeader = () => {
