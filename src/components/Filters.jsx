@@ -58,60 +58,56 @@ const Filters = () => {
                 />
               </div>
             </div>
-
             <h3 className={css.title}>Filters</h3>
-
             <div className={css.equipment}>
               <h4 className={css.subTitle}>Vehicle equipment</h4>
               <hr className={css.separator} />
               <div className={css.equipmentOptions}>
-                {VEHICLE_EQUIPMENT.map(option => (
-                  <label key={option.value} className={css.equipmentLabel}>
+                {VEHICLE_EQUIPMENT.map(item => (
+                  <label key={item.value} className={css.equipmentLabel}>
                     <Field
                       type="checkbox"
                       name="equipment"
-                      value={option.value}
-                      checked={values.equipment.includes(option.value)}
+                      value={item.value}
+                      checked={values.equipment.includes(item.value)}
                       className={css.checkbox}
                       onChange={() =>
                         setFieldValue(
                           'equipment',
-                          values.equipment.includes(option.value)
+                          values.equipment.includes(item.value)
                             ? values.equipment.filter(
-                                item => item !== option.value
+                                item => item !== item.value
                               )
-                            : [...values.equipment, option.value]
+                            : [...values.equipment, item.value]
                         )
                       }
-                      aria-label={option.label}
+                      aria-label={item.label}
                     />
-                    <Icon name={option.icon} />
-                    {option.label}
+                    <Icon name={item.icon} />
+                    {item.label}
                   </label>
                 ))}
               </div>
             </div>
-
             <div className={css.vehicleType}>
               <h4 className={css.subTitle}>Vehicle type</h4>
               <hr className={css.separator} />
               <div className={css.vehicleTypeOptions}>
-                {VEHICLE_TYPE.map(option => (
-                  <label key={option.value} className={css.vehicleTypeLabel}>
+                {VEHICLE_TYPE.map(item => (
+                  <label key={item.value} className={css.vehicleTypeLabel}>
                     <Field
                       type="radio"
                       name="vehicleType"
-                      value={option.value}
+                      value={item.value}
                       className={css.radioButton}
-                      aria-label={option.label}
+                      aria-label={item.label}
                     />
-                    <Icon name={option.icon} />
-                    {option.label}
+                    <Icon name={item.icon} />
+                    {item.label}
                   </label>
                 ))}
               </div>
             </div>
-
             <Button type="submit" aria-label="Search">
               Search
             </Button>
