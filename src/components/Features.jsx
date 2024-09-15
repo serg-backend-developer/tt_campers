@@ -13,7 +13,7 @@ const Features = () => {
 
   return (
     <div className={css.content}>
-      <VehicleEquipmentList equipment={vehicleEquipment} />
+      <VehicleEquipmentList vehicleEquipment={vehicleEquipment} />
 
       <VehicleItemDescription {...camper} />
     </div>

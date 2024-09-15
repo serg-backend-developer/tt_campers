@@ -9,7 +9,7 @@ import { getFilteredVehicleEquipment } from '../utils';
 const Camper = ({ camper }) => {
   const { id, name, description, gallery = [] } = camper;
 
-  const equipment = getFilteredVehicleEquipment({ ...camper });
+  const vehicleEquipment = getFilteredVehicleEquipment({ ...camper });
 
   return (
     <div className={css.card}>
@@ -20,7 +20,7 @@ const Camper = ({ camper }) => {
 
         <p className={css.description}>{description}</p>
 
-        <EquipmentList equipment={equipment} />
+        <EquipmentList vehicleEquipment={vehicleEquipment} />
 
         <Button aria-label="Show More">
           <Link to={`/catalog/${id}/features`} className={css.link}>

@@ -28,10 +28,10 @@ const CamperPageHeader = ({ camper }) => {
   return (
     <div className={css.header}>
       <div className={css.info}>
-        <h2 className={css.title}>{name}</h2>
+        <h2 className={css.cTitle}>{name}</h2>
 
         {!isPathDetails && (
-          <p className={css.camperPrice}>
+          <p className={css.cPrice}>
             <span className={css.price}>€{price.toFixed(2)}</span>
             <Icon
               name="icon-heart"
@@ -43,7 +43,7 @@ const CamperPageHeader = ({ camper }) => {
         )}
       </div>
 
-      <p className={css.camperRating}>
+      <p className={css.cRating}>
         <span className={css.rating}>
           <Icon name="icon-star" className="iconStar" />
           <span className={css.valueRating}>

@@ -2,10 +2,10 @@ import VehicleEquipmentItem from './VehicleEquipmentItem';
 
 import css from './VehicleEquipmentList.module.css';
 
-const VehicleEquipmentList = ({ equipment }) => {
+const VehicleEquipmentList = ({ vehicleEquipment }) => {
   return (
-    <ul className={css.equipmentList}>
-      {equipment.map(({ icon, label }) => (
+    <ul className={css.main}>
+      {vehicleEquipment.map(({ icon, label }) => (
         <VehicleEquipmentItem key={label} icon={icon} label={label} />
       ))}
     </ul>

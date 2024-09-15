@@ -19,7 +19,7 @@
 	}
 }
 
-.title,
+.cTitle,
 .price {
 	font-weight: 600;
 	font-size: var(--font-medium);
@@ -28,26 +28,26 @@
 }
 
 @media screen and (min-width: 1440px) {
-	.title,
+	.cTitle,
 	.price {
 		font-size: var(--font-large);
 	}
 }
 
-.camperPrice {
+.cPrice {
 	display: flex;
 	align-items: center;
 	gap: 12px;
 }
 
 @media screen and (max-width: 767px) {
-	.camperPrice {
+	.cPrice {
 		justify-self: end;
 		order: -1;
 	}
 }
 
-.camperRating {
+.cRating {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.camperRating {
+	.cRating {
 		flex-direction: row;
 		align-items: center;
 		gap: 16px;
