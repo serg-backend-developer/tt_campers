@@ -8,7 +8,7 @@ import css from './Filters.module.css';
 
 const INITIAL_DATA = {
   location: '',
-  equipment: [],
+  vehicleEquipment: [],
   vehicleType: '',
 };
 
@@ -59,7 +59,7 @@ const Filters = () => {
               </div>
             </div>
             <h3 className={css.title}>Filters</h3>
-            <div className={css.equipment}>
+            <div className={css.vehicleEquipment}>
               <h4 className={css.subTitle}>Vehicle equipment</h4>
               <hr className={css.separator} />
               <div className={css.equipmentOptions}>
@@ -67,18 +67,18 @@ const Filters = () => {
                   <label key={item.value} className={css.equipmentLabel}>
                     <Field
                       type="checkbox"
-                      name="equipment"
+                      name="vehicleEquipment"
                       value={item.value}
-                      checked={values.equipment.includes(item.value)}
+                      checked={values.vehicleEquipment.includes(item.value)}
                       className={css.checkbox}
                       onChange={() =>
                         setFieldValue(
-                          'equipment',
-                          values.equipment.includes(item.value)
-                            ? values.equipment.filter(
+                          'vehicleEquipment',
+                          values.vehicleEquipment.includes(item.value)
+                            ? values.vehicleEquipment.filter(
                                 item => item !== item.value
                               )
-                            : [...values.equipment, item.value]
+                            : [...values.vehicleEquipment, item.value]
                         )
                       }
                       aria-label={item.label}

@@ -66,7 +66,7 @@
 	color: var(--text);
 }
 
-.equipment,
+.vehicleEquipment,
 .vehicleType {
 	display: flex;
 	flex-direction: column;
@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-	.equipment,
+	.vehicleEquipment,
 	.vehicleType {
 		gap: 24px;
 	}

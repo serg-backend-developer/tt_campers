@@ -8,12 +8,12 @@ export const selectPage = (state) => state.campers.page;
 
 export const selectCampers = createSelector(
 	[selectAllCampers, selectLocation, selectEquipment, selectVehicleType],
-	(campers, location, equipment, vehicleType) => {
+	(campers, location, vehicleEquipment, vehicleType) => {
 		return campers.filter((camper) => {
 			if (location && !camper.location.includes(location)) {
 				return false;
 			}
-			if (equipment.length > 0) {
+			if (vehicleEquipment.length > 0) {
 				const equipmentChecks = {
 					AC: camper.AC,
 					automatic: camper.transmission === "automatic",
@@ -21,7 +21,7 @@ export const selectCampers = createSelector(
 					TV: camper.TV,
 					bathroom: camper.bathroom,
 				};
-				for (const item of equipment) {
+				for (const item of vehicleEquipment) {
 					if (!equipmentChecks[item]) {
 						return false;
 					}

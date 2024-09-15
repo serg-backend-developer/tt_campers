@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const initialState = {
 	location: "",
-	equipment: [],
+	vehicleEquipment: [],
 	vehicleType: "",
 };
 

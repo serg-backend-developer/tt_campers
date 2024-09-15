@@ -1,4 +1,4 @@
-import { formatString, addSpaceToUnit } from '../utils';
+import { formatString, addSpaceBetweenDigitAndUnit } from '../utils';
 import css from './VehicleItemDescription.module.css';
 
 const VehicleItemDescription = ({ form, length, width, height, tank, consumption }) => {
@@ -11,16 +11,16 @@ const VehicleItemDescription = ({ form, length, width, height, tank, consumption
           Form <span>{formatString(form)}</span>
         </li>
         <li className={css.item}>
-          Length <span>{addSpaceToUnit(length)}</span>
+          Length <span>{addSpaceBetweenDigitAndUnit(length)}</span>
         </li>
         <li className={css.item}>
-          Width <span>{addSpaceToUnit(width)}</span>
+          Width <span>{addSpaceBetweenDigitAndUnit(width)}</span>
         </li>
         <li className={css.item}>
-          Height <span>{addSpaceToUnit(height)}</span>
+          Height <span>{addSpaceBetweenDigitAndUnit(height)}</span>
         </li>
         <li className={css.item}>
-          Tank <span>{addSpaceToUnit(tank)}</span>
+          Tank <span>{addSpaceBetweenDigitAndUnit(tank)}</span>
         </li>
         <li className={css.item}>
           Consumption <span>{consumption}</span>
