@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 
-import Container from './components/Container';
-import CamperList from './components/CamperList';
-import { selectFavoritesCampers } from './redux/favorites/favoritesSelectors';
+import Container from '../components/Container';
+import CamperList from '../components/CamperList';
+import { selectFavoritesCampers } from '../redux/favorites/favoritesSelectors';
 import css from './FavoritesPage.module.css';
 
 const FavoritesPage = () => {

@@ -1,4 +1,4 @@
-import { formatString, addSpaceToUnit } from './utils';
+import { formatString, addSpaceToUnit } from '../utils';
 import css from './VehicleItemDescription.module.css';
 
 const VehicleItemDescription = ({ form, length, width, height, tank, consumption }) => {

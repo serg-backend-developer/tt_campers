@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
-import { changePage } from ',redux/campers/campersSlice';
-import { selectCampers, selectPage } from '.redux/campers/campersSelectors';
+import { changePage } from '../redux/campers/campersSlice';
+import { selectCampers, selectPage } from '../redux/campers/campersSelectors';
 import CamperList from './CamperList';
 import Button from './Button';
 import css from './GeneralCamperList.module.css';

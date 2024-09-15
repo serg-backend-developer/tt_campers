@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
-import { selectFavoriteCamper } from './redux/favorites/favoritesSelectors';
-import { addFavorite, removeFavorite } from './redux/favorites/favoritesSlice';
-import { messages } from './utils/messages';
+import { selectFavoriteCamper } from '../redux/favorites/favoritesSelectors';
+import { addFavorite, removeFavorite } from '../redux/favorites/favoritesSlice';
+import { messages } from '../utils';
 import Icon from './Icon';
 import css from './CamperPageHeader.module.css';
 

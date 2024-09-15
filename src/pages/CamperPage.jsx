@@ -2,16 +2,16 @@ import { Suspense, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, Outlet } from 'react-router-dom';
 
-import Container from './components/Container';
-import CamperPageHeader from './components/CamperPageHeader';
-import Navigation from './components/Navigation';
-import CamperFotoModal from './components/CamperFotoModal';
-import Application from './components/Application';
-import Loader from './components/Loader';
+import Container from '../components/Container';
+import CamperPageHeader from '../components/CamperPageHeader';
+import Navigation from '../components/Navigation';
+import CamperFotoModal from '../components/CamperFotoModal';
+import Application from '../components/Application';
+import Loader from '../components/Loader';
 
-import { getCamperById } from './redux/campers/campersOps';
-import { selectIsLoading, selectCamperById } from './redux/campers/campersSelector';
-import { messages } from './utils/messages';
+import { getCamperById } from '../redux/campers/campersOps';
+import { selectIsLoading, selectCamperById } from '../redux/campers/campersSelectors';
+import { messages } from '../utils';
 import css from './CamperPage.module.css';
 
 const CamperPage = () => {

@@ -1,4 +1,4 @@
-import ApplicationForm from './ApplicationForm/ApplicationForm';
+import ApplicationForm from './ApplicationForm';
 import css from './Application.module.css';
 
 const Application = () => {

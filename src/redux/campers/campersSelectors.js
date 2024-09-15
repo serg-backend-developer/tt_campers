@@ -3,7 +3,7 @@ import {
 	selectEquipment,
 	selectLocation,
 	selectVehicleType,
-} from "./redux/filters/selectors";
+} from "../filters/filtersSelectors";
 export const selectAllCampers = (state) => state.campers.items;
 export const selectCamperById = (state) => state.campers.camper;
 export const selectIsLoading = (state) => state.campers.loading;

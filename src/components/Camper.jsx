@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 import Button from './Button';
 import CamperPageHeader from './CamperPageHeader';
-import EquipmentList from './EquipmentList';
+import EquipmentList from './VehicleEquipmentList';
 import css from './Camper.module.css';
-import { getFilteredVehicleEquipment } from './utils';
+import { getFilteredVehicleEquipment } from '../utils';
 
 const Camper = ({ camper }) => {
   const { id, name, description, gallery = [] } = camper;

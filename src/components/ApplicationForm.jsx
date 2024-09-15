@@ -1,12 +1,12 @@
+import clsx from 'clsx';
+import DatePicker from 'react-datepicker';
 import * as Yup from 'yup';
 import { Field, Form, Formik, ErrorMessage } from 'formik';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useState } from 'react';
-import clsx from 'clsx';
 
-import Button from './components/Button/Button';
-import { messages } from './utils/messages';
+import Button from '../components/Button';
+import { messages } from '../utils';
 import css from './ApplicationForm.module.css';
 import './DatePicker.css';
 

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import Button from './Button';
 import Icon from './Icon';
-import { changeFilter } from '.redux/filters/filtersSlice';
+import { changeFilter } from '../redux/filters/filtersSlice';
 import css from './Filters.module.css';
 
 const INITIAL_DATA = {
