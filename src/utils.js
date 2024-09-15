@@ -7,7 +7,7 @@ export const formatString = (str) => {
 		.replace(/^\w/, (c) => c.toUpperCase());
 };
 
-export const addSpaceToUnit = (str) => {
+export const addSpaceBetweenDigitAndUnit = (str) => {
 	return str.replace(/(\d+\.?\d*)([a-zA-Z]+)/, "$1 $2");
 };
 
@@ -18,15 +18,15 @@ const options = {
 };
 
 export const messages = {
-	success: (message) =>
-		toast.success(message, {
-			...options,
-			style: { background: "#ffc531", color: "#101828" },
-		}),
 	info: (message) =>
 		toast(message, {
 			...options,
 			style: { background: "#475467", color: "#fff" },
+		}),
+	success: (message) =>
+		toast.success(message, {
+			...options,
+			style: { background: "#ffc531", color: "#101828" },
 		}),
 	error: (message) =>
 		toast.error(message, {
