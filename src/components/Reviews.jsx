@@ -21,8 +21,8 @@ const Reviews = () => {
 
   return (
     <ul className={css.main}>
-      {reviews.map(({ id, reviewer_name, reviewer_rating, comment }) => (
-        <li className={css.item} key={id}>
+      {reviews.map(({ reviewer_name, reviewer_rating, comment }) => (
+        <li className={css.item} key={reviewer_name}>
           <div className={css.header}>
             <p className={css.foto}>{reviewer_name[0].toUpperCase()}</p>
             <div className={css.info}>

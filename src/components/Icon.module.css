@@ -59,14 +59,14 @@
 }
 
 .ratingNoStar {
-	color: var(--badges);
+	fill: var(--badges);
 	width: 16px;
 	height: 16px;
 }
 
 
 .ratingStar {
-	color: var(--rating);
+	fill: var(--stars);
 	width: 16px;
 	height: 16px;
 }

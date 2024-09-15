@@ -13,13 +13,10 @@ const FavoritesPage = () => {
       <main>
         <section className={css.section}>
           <Container className="favorites">
-            {favorites.length > 0 ? (
-              <CamperList items={favorites} />
-            ) : (
-              <p className={css.abs}>
+            {favorites.length > 0 ? (<CamperList items={favorites} />)
+            : (<p className={css.abs}>
                 You have no favorite campers yet
-              </p>
-            )}
+              </p>)}
           </Container>
         </section>
       </main>
