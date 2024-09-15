@@ -22,19 +22,16 @@ export const messages = {
 		toast.success(message, {
 			...options,
 			style: { background: "#ffc531", color: "#101828" },
-			icon: "👍",
 		}),
 	info: (message) =>
 		toast(message, {
 			...options,
 			style: { background: "#475467", color: "#fff" },
-			icon: "🙄",
 		}),
 	error: (message) =>
 		toast.error(message, {
 			...options,
 			style: { background: "#e44848", color: "#fff" },
-			icon: "👀",
 		}),
 };
 

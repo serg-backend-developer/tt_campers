@@ -58,14 +58,15 @@
 	}
 }
 
-.iconStar {
+.ratingNoStar {
+	color: var(--badges);
 	width: 16px;
 	height: 16px;
-	fill: var(--rating);
 }
 
-.iconStarEmpty {
+
+.ratingStar {
+	color: var(--rating);
 	width: 16px;
 	height: 16px;
-	fill: var(--badges);
 }

@@ -14,15 +14,15 @@ const Reviews = () => {
       <Icon
         key={index}
         name="icon-star"
-        className={index < rating ? 'iconStar' : 'iconStarEmpty'}
+        className={index < rating ? 'ratingStar' : 'ratingNoStar'}
       />
     ));
   };
 
   return (
-    <ul className={css.list}>
-      {reviews.map(({ reviewer_name, reviewer_rating, comment }) => (
-        <li className={css.item} key={reviewer_name}>
+    <ul className={css.main}>
+      {reviews.map(({ id, reviewer_name, reviewer_rating, comment }) => (
+        <li className={css.item} key={id}>
           <div className={css.header}>
             <p className={css.foto}>{reviewer_name[0].toUpperCase()}</p>
             <div className={css.info}>

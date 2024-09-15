@@ -45,7 +45,7 @@ const CamperPageHeader = ({ camper }) => {
 
       <p className={css.cRating}>
         <span className={css.rating}>
-          <Icon name="icon-star" className="iconStar" />
+          <Icon name="icon-star" className="ratingStar" />
           <span className={css.valueRating}>
             {rating} ({reviews.length} Reviews)
           </span>
