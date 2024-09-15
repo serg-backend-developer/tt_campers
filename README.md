@@ -4,11 +4,19 @@
 
 ### Як встановити проект локально та запустити.
 
-Клонуйте репозиторій::
-`git clone https://github.com/sergiishevchenko/tt_campers`
+Клонуйте репозиторій:
+```
+git clone https://github.com/sergiishevchenko/tt_campers
+```
 Перейдіть до папки проекту:
-`cd tt_campers`
+```
+cd tt_campers
+```
 Встановіть залежності:
-`npm i`
+```
+npm i
+```
 Запустіть сервер розробки:
-`npm run dev`
+```
+npm run dev
+```
